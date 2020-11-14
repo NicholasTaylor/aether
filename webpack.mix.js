@@ -18,12 +18,6 @@ mix.js('resources/js/app.js', 'public/js')
     .styles([
     'resources/css/bootstrap-reboot.min.css'
     ], 'public/css/bootstrap-reboot.min.css')
-    .copy(
-    'resources/fonts/',
-    'public/fonts/')
-    .styles(
-    'resources/css/gilroy.css',
-    'public/css/gilroy.css')
     .sass(
         'resources/scss/homepage.scss',
     'public/css');
