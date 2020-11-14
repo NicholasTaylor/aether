@@ -1,0 +1,40 @@
+#logo {
+    z-index: 200;
+    position: fixed;
+    left: 50%;
+    top: 2em;
+    padding: 1.25em 1.5em;
+    transform: translateX(-50%);
+    h1 {
+        font-family: $fontStackLogo;
+        font-weight: 400;
+        color: white;
+        font-size: 4.5rem;
+        text-transform: lowercase;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        $logoSpacing: .25em;
+        letter-spacing: $logoSpacing;
+        padding-left: ($logoSpacing / 2);
+    }
+}
+#nav-top {
+    z-index: 201;
+    position: fixed;
+    background-color: black;
+    width: 80vw;
+    height: 100vh;
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        li {
+            @include title-style;
+            color: white;
+            font-size: 3rem;
+            text-align: center;
+        }
+    }
+}

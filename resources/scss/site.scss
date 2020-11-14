@@ -1,0 +1,21 @@
+$fontStackLogo: 'urw-din';
+$fontStackTitle: 'futura-pt-bold';
+$fontStackMain: 'halyard-display';
+@mixin title-style {
+    font-family: $fontStackTitle;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;    
+}
+
+html, body {
+    font-size: 100%;
+    background-color: black;
+    font-family: $fontStackMain;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    z-index: 100;
+}
