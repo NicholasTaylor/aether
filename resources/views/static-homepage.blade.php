@@ -6,10 +6,15 @@
         <link rel="stylesheet" href={{ asset('css/homepage.css') }}>
     </head>
     <header>
+        <div id="nav-icon">
+            <img src="{{ asset('images/ui/icon-nav-mobile-hamburger-white.png') }}" />
+        </div>
         <div id="logo">
             <h1>
                 Aether_
             </h1>
+        </div>
+        <div id="nav-screen">
         </div>
         <nav id="nav-top">
             <ul>
@@ -72,5 +77,6 @@
                 </div>
             </article>
         </div>
+    <script src="{{ asset('js/mobile-nav.js') }}" type="text/javascript"></script>
     </body>
 </html>
