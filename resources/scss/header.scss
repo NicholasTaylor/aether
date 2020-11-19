@@ -19,22 +19,3 @@
         padding-left: ($logoSpacing / 2);
     }
 }
-#nav-top {
-    z-index: 201;
-    position: fixed;
-    background-color: black;
-    width: 80vw;
-    height: 100vh;
-    ul {
-        list-style-type: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        li {
-            @include title-style;
-            color: white;
-            font-size: 3rem;
-            text-align: center;
-        }
-    }
-}

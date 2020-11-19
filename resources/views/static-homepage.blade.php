@@ -6,36 +6,124 @@
         <link rel="stylesheet" href={{ asset('css/homepage.css') }}>
     </head>
     <header>
+        <div id="nav-icon">
+            <img src="{{ asset('images/ui/white/icon-nav-mobile-hamburger-white.png') }}" />
+        </div>
         <div id="logo">
             <h1>
                 Aether_
             </h1>
         </div>
+        <div id="nav-screen">
+        </div>
         <nav id="nav-top">
-            <ul>
+            <ul class="nav-text">
                 <li>
-                    Journal
+                    <a href="">
+                        Journal
+                    </a>
                 </li>
                 <li>
-                    Lifehacks
+                    <a href="">
+                        Lifehacks
+                    </a>
                 </li>
                 <li>
-                    Code
+                    <a href="">
+                        Code
+                    </a>
                 </li>
                 <li>
-                    Writing
+                    <a href="">
+                        Writing
+                    </a>
                 </li>
                 <li>
-                    Drawing
+                    <a href="">
+                        Drawing
+                    </a>
                 </li>
                 <li>
-                    Memes
+                    <a href="">
+                        Memes
+                    </a>
                 </li>
                 <li>
-                    Gaming
+                    <a href="">
+                        Gaming
+                    </a>
                 </li>
                 <li>
-                    Miscellaneous
+                    <a href="">
+                        Miscellaneous
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav-social">
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-tk.png') }}" alt="TikTok" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-twitch.png') }}" alt="Twitch" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-ig.png') }}" alt="Instagram" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-yt.png') }}" alt="YouTube" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-twitter.png') }}" alt="Twitter" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-vs.png') }}" alt="VSCO" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-sc.png') }}" alt="Snapchat" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-be.png') }}" alt="Behance" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-dr.png') }}" alt="Dribbble" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-gh.png') }}" alt="Github" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-fb.png') }}" alt="Facebook" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-pn.png') }}" alt="Pinterest" />
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="{{ asset('images/ui/white/social-logos-white-li.png') }}" alt="LinkedIn" />
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -72,5 +160,6 @@
                 </div>
             </article>
         </div>
+    <script src="{{ asset('js/mobile-nav.js') }}" type="text/javascript"></script>
     </body>
 </html>
