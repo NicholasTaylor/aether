@@ -14,11 +14,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-<<<<<<< HEAD
 *:Zone.Identifier
 *:AFP_AfpInfo
 *:com.apple.metadata*
 *:com.apple.lastuseddate#PS
-=======
-*Zone.Identifier
->>>>>>> 964e7591ddcef600ed89df3dcb47f56c56f3c619
