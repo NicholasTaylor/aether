@@ -7,7 +7,11 @@
     </head>
     <header>
         <div id="nav-icon">
+<<<<<<< HEAD
             <img src="{{ asset('images/ui/white/icon-nav-mobile-hamburger-white.png') }}" />
+=======
+            <img src="{{ asset('images/ui/icon-nav-mobile-hamburger-white.png') }}" />
+>>>>>>> 964e7591ddcef600ed89df3dcb47f56c56f3c619
         </div>
         <div id="logo">
             <h1>
