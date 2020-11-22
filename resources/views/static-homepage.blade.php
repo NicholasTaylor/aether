@@ -4,6 +4,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0 viewport-fit=cover"
         <link rel="stylesheet" href={{ asset('css/bootstrap-reboot.min.css') }}>
         <link rel="stylesheet" href="https://use.typekit.net/hkc3dnk.css">
+        <link rel="stylesheet" href={{ asset('css/site.css') }}>
+        <link rel="stylesheet" href={{ asset('css/header.css') }}>
+        <link rel="stylesheet" href={{ asset('css/footer.css') }}>
         <link rel="stylesheet" href={{ asset('css/homepage.css') }}>
     </head>
     <body>
@@ -131,13 +134,13 @@
             </nav>
         </header>
         <div id="container">
-            <article class="entry">
+            <article class="entry" style="background-image:url({{ asset('images/brookfield.jpg') }})">
                 <div class="bg-screen">
                 </div>
                 <div class="bg-video">
-                    <video autoplay muted loop id="filename-here">
+                    <!--<video autoplay muted loop id="filename-here">
                         <source src="{{ asset('images/manhattan-bridge.mp4') }}" type="video/mp4">
-                    </video>
+                    </video>-->
                 </div>
                 <div class="entry-content">
                     <h1>
