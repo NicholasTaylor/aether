@@ -49,3 +49,16 @@
         }
     }
 }
+
+@media only screen and (min-width: 420px) and (min-height: 420px){
+    .entry {
+        .entry-content {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+}

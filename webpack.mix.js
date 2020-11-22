@@ -32,7 +32,7 @@ mix.js('resources/js/app.js', 'public/js')
     'public/css');
 
 mix.js([
-    'resources/js/mobile-nav.js'
+    'resources/js/nav.js'
     ], 'public/js');
 
 mix.copyDirectory('resources/images', 'public/images');
