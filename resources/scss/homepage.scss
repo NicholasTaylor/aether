@@ -1,7 +1,4 @@
-@import "site";
-@import "header";
-@import "nav";
-@import "footer";
+@import "mixins_vars";
 
 .entry {
     position: relative;
@@ -43,12 +40,25 @@
         }
         h1 {
             @include title-style;
-            font-size: 4.5rem;
+            font-size: 1.75rem;
         }
         p {
             font-family: $fontStackMain;
             font-weight: 300;
-            font-size: 3.5rem;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 420px) and (min-height: 420px){
+    .entry {
+        .entry-content {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 2rem;
+            }
         }
     }
 }

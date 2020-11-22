@@ -1,0 +1,14 @@
+/* START: Variables */
+$fontStackLogo: 'urw-din';
+$fontStackTitle: 'futura-pt-bold';
+$fontStackMain: 'halyard-display';
+/* END: Variables */
+
+
+/* START: Mix-ins */
+@mixin title-style {
+    font-family: $fontStackTitle;
+    text-transform: uppercase;
+    letter-spacing: -0.03em;    
+}
+/* END: Mix-ins */

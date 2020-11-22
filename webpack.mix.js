@@ -19,11 +19,20 @@ mix.js('resources/js/app.js', 'public/js')
     'resources/css/bootstrap-reboot.min.css'
     ], 'public/css/bootstrap-reboot.min.css')
     .sass(
+        'resources/scss/site.scss',
+    'public/css')
+    .sass(
         'resources/scss/homepage.scss',
+    'public/css')
+    .sass(
+        'resources/scss/header.scss',
+    'public/css')
+    .sass(
+        'resources/scss/footer.scss',
     'public/css');
 
 mix.js([
-    'resources/js/mobile-nav.js'
+    'resources/js/nav.js'
     ], 'public/js');
 
 mix.copyDirectory('resources/images', 'public/images');
