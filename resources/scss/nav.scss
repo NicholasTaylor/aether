@@ -48,7 +48,7 @@ nav {
             margin: .25em 1em .25em 0;
             img {
                 height: auto;
-                width: 6rem;
+                width: 1.75rem;
             }
         }
     }
@@ -71,26 +71,27 @@ nav {
         padding: 0;
         margin: 2em 0 0 10%;
         li {
-            font-size: 4rem;
+            font-size: 1.75rem;
             text-align: left;
         }
     }
     ul.nav-text {
         li {
             width: 80%;
+            font-size: 1.25rem;
         }
     }
 }
 
 
 #nav-footer {
-    font-size: 3rem;
+    font-size: 1.25rem;
     margin: 1em auto;
     ul {
         padding: 0;
         text-align: center;
         li {
-            font-size: 3rem;
+            font-size: 1.25rem;
             display: inline-block;
             margin: 0 .25em;
         }
@@ -105,10 +106,10 @@ nav {
 #nav-icon {
     position: fixed;
     z-index: 203;
-    top: 4em;
-    left: 4em;
+    top: 1.25rem;
+    left: 1rem;
     img {
-        width: 3em;
+        width: 1rem;
         height: auto;
     }
 }
@@ -126,4 +127,49 @@ nav {
     animation-duration: .25s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+}
+
+@media only screen and (min-width: 420px){
+    #nav-screen {
+        display: none;
+    }
+
+    #nav-icon {
+        display: none;
+    }
+
+    #nav-top {
+        left: 50%;
+        top: 0;
+        background-color: transparent;
+        animation-name: none !important;
+        transform: translateX(-50%);
+        ul {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            li {
+                display: inline-block;
+                width: auto;
+            }
+        }
+        ul.nav-text {
+            li {
+                font-size: 2rem;
+                width: auto;
+                margin: 0 .5em 0 0;
+            }
+        }
+        ul.nav-social {
+            margin: 0 auto;
+            li {
+                font-size: 3rem;
+                line-height: 1;
+                margin: 0 .5em 0 0;
+                img {
+                    width: 3rem;
+                }
+            }
+        }
+    }
 }

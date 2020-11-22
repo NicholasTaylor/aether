@@ -1,15 +1,14 @@
 #logo {
     z-index: 200;
     position: fixed;
+    top: 1rem;
     left: 50%;
-    top: 2em;
-    padding: 1.25em 1.5em;
     transform: translateX(-50%);
     h1 {
         font-family: $fontStackLogo;
         font-weight: 400;
         color: white;
-        font-size: 4.5rem;
+        font-size: 1.5rem;
         text-transform: lowercase;
         margin: 0;
         padding: 0;
