@@ -11,22 +11,22 @@
 }
 
 @keyframes nav-screen-on {
-    0% { 
+    0% {
         visibility: hidden;
         opacity: 0;
     }
-    100% { 
+    100% {
         visibility: visible;
         opacity: 1;
     }
 }
 
 @keyframes nav-screen-off {
-    0% { 
+    0% {
         visibility: visible;
         opacity: 1;
     }
-    100% { 
+    100% {
         visibility: hidden;
         opacity: 0;
     }
@@ -116,7 +116,7 @@ header {
                 height: auto;
             }
         }
-        
+
         #nav-screen {
             width: 100vw;
             height: 100vh;
@@ -131,7 +131,7 @@ header {
             animation-fill-mode: forwards;
             animation-timing-function: ease-in-out;
         }
-        
+
         #logo {
             z-index: 200;
             position: fixed;
@@ -158,19 +158,19 @@ header {
 
 @media only screen and (min-width: 420px) and (min-height: 420px) {
     header {
-        left: 50%;
-        transform: translateX(-50%);
         height: initial;
+        width: 100vw;
+        top: 0;
         #container-header {
             margin: 2vh 5vw;
             #nav-screen {
                 display: none;
             }
-        
+
             #nav-icon {
                 display: none;
             }
-        
+
             #nav-top {
                 top: 0;
                 left: 0;
@@ -218,4 +218,56 @@ header {
             }
         }
     }
+}
+
+@media only screen and (min-width:1024px) {
+  header {
+    #container-header {
+      #logo {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+      #nav-top {
+        ul.nav-text {
+          li {
+            font-size: 1.5rem;
+          }
+        }
+        ul.nav-social {
+          li {
+            img {
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  header {
+    #container-header {
+      #logo {
+        h1 {
+          font-size: 5rem;
+        }
+      }
+      #nav-top {
+        ul.nav-text {
+          li {
+            font-size: 2rem;
+          }
+        }
+        ul.nav-social {
+          li {
+            img {
+              width: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }

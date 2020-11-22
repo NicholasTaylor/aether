@@ -136,13 +136,13 @@
             </div>
         </header>
         <div id="container">
-            <article class="entry" style="background-image:url({{ asset('images/brookfield.jpg') }})">
+            <article class="entry">
                 <div class="bg-screen">
                 </div>
                 <div class="bg-video">
-                    <!--<video autoplay muted loop id="filename-here">
+                    <video autoplay muted loop id="filename-here">
                         <source src="{{ asset('images/manhattan-bridge.mp4') }}" type="video/mp4">
-                    </video>-->
+                    </video>
                 </div>
                 <div class="entry-content">
                     <h1>

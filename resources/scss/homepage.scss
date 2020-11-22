@@ -15,7 +15,7 @@
         background-color: rgba(0,0,0,.25);
     }
     .bg-video {
-        video {    
+        video {
             object-fit: cover;
             object-position: center center;
             width: 100%;
@@ -30,9 +30,9 @@
         position: absolute;
         z-index: 110;
         color: white;
-        width: 80%;
-        left: 2em;
-        bottom: 2em;
+        width: 90vw;
+        margin: 0 5vw 2em 5vw;
+        bottom: 0;
         h1, h2, h3, h4, h5, h6, p {
             margin: 0;
             padding: 0;
@@ -54,11 +54,37 @@
     .entry {
         .entry-content {
             h1 {
-                font-size: 3rem;
+                font-size: 2rem;
             }
             p {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
         }
     }
+}
+
+@media only screen and (min-width:1024px) {
+  .entry {
+    .entry-content {
+      h1 {
+        font-size: 3rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  .entry {
+    .entry-content {
+      h1 {
+        font-size: 5rem;
+      }
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
 }
