@@ -29,6 +29,12 @@ mix.js('resources/js/app.js', 'public/js')
     'public/css')
     .sass(
         'resources/scss/footer.scss',
+    'public/css')
+    .sass(
+        'resources/scss/site-v2.scss',
+    'public/css')
+    .sass(
+        'resources/scss/header-v2.scss',
     'public/css');
 
 mix.js([

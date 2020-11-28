@@ -1,6 +1,8 @@
 @import "mixins_vars";
+@import "animations";
 
-html, body {
+html,
+body {
     font-size: 100%;
     background-color: black;
     font-family: $fontStackMain;
@@ -13,4 +15,377 @@ html, body {
     min-height: 100vh;
     position: relative;
     z-index: 100;
+}
+
+header {
+    position: fixed;
+    z-index: 200;
+    width: 100vw;
+    height: 3em;
+    background-color: rgba(0, 0, 0, 0);
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+#container-header {
+    #nav-top {
+        position: fixed;
+        z-index: 205;
+        background-color: black;
+        width: 80vw;
+        height: 100vh;
+        top: 0;
+        left: -100vw;
+        animation-duration: 0.25s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        ul {
+            display: flex;
+            flex-flow: row wrap;
+            padding: 0;
+            margin: 2em 0 0 10%;
+            list-style-type: none;
+            li {
+                @include title-style;
+                color: white;
+                text-align: left;
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        ul.nav-text {
+            li {
+                width: 80%;
+                font-size: $navFontSizeMobile;
+            }
+        }
+        ul.nav-social {
+            li {
+                width: initial;
+                margin: 0.25em 1em 0.25em 0;
+                img {
+                    height: auto;
+                    width: $navImgSocialMobile;
+                }
+            }
+        }
+    }
+
+    #nav-icon {
+        position: fixed;
+        z-index: 203;
+        top: 0.75rem;
+        left: 1rem;
+        img {
+            width: 1rem;
+            height: auto;
+        }
+    }
+
+    #nav-screen {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        z-index: 204;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        animation-duration: 0.25s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+    }
+
+    #logo {
+        z-index: 200;
+        position: fixed;
+        top: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        h1 {
+            font-family: $fontStackLogo;
+            font-weight: 400;
+            color: white;
+            font-size: $navLogoSizeMobile;
+            text-transform: lowercase;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+            $logoSpacing: 0.25em;
+            letter-spacing: $logoSpacing;
+            padding-left: ($logoSpacing / 2);
+        }
+    }
+}
+
+footer {
+    width: 90vw;
+    margin: 0 5vw 2em 5vw;
+    #copyright {
+        font-size: $navFontSizeMobile;
+        text-align: center;
+        color: white;
+    }
+}
+
+#nav-footer {
+    font-size: $navFontSizeMobile;
+    margin: 1em auto;
+    ul {
+        list-style-type: none;
+        padding: 0;
+        text-align: center;
+        li {
+            @include title-style;
+            color: white;
+            font-size: $navFontSizeMobile;
+            display: inline-block;
+            margin: 0 0.25em;
+            a {
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    ul.nav-social {
+        li {
+            width: initial;
+            margin: 1em;
+            img {
+                height: auto;
+                width: $navImgSocialMobile;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 421px) and (min-height: 421px) {
+    header {
+        height: initial;
+        width: 100vw;
+        top: 0;
+    }
+
+    #container-header {
+        margin: 2vh 5vw;
+        #nav-screen {
+            display: none;
+        }
+
+        #nav-icon {
+            display: none;
+        }
+
+        #nav-top {
+            top: 0;
+            left: 0;
+            height: initial;
+            background-color: transparent;
+            animation-name: none !important;
+            position: relative;
+            ul {
+                display: block;
+                margin: 0.75em auto;
+                text-align: left;
+                li {
+                    display: inline-block;
+                    width: auto;
+                }
+            }
+            ul.nav-text {
+                li {
+                    font-size: $navFontSizeTablet;
+                    width: auto;
+                    margin: 0 1.25em 0 0;
+                }
+            }
+            ul.nav-social {
+                margin: 0 auto;
+                li {
+                    font-size: $navImgSocialTablet;
+                    line-height: 1;
+                    margin: .25em 1.1em .25em 0;
+                    img {
+                        width: $navImgSocialTablet;
+                    }
+                }
+            }
+        }
+        #logo {
+            position: relative;
+            left: 0;
+            top: 0;
+            transform: none;
+            margin: 0 0 1em 0;
+            h1 {
+                font-size: $navLogoSizeTablet;
+            }
+        }
+    }
+
+    footer {
+        #copyright {
+            font-size: $navFontSizeTablet;
+        }
+    }
+    #nav-footer {
+        font-size: $navFontSizeTablet;
+        ul {
+            margin: 0.5em 0;
+            li {
+                font-size: $navFontSizeTablet;
+            }
+        }
+        ul.nav-social {
+            li {
+                margin: 0.5em 1em;
+                img {
+                    width: $navImgSocialTablet;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #container-header {
+        #logo {
+            margin: 0 0 0.5em 0;
+            h1 {
+                font-size: $navLogoSizeLaptop;
+            }
+        }
+        #nav-top {
+            ul {
+                margin: 0.5em auto;
+            }
+            ul.nav-text {
+                li {
+                    font-size: $navFontSizeLaptop;
+                }
+            }
+            ul.nav-social {
+                li {
+                    margin: 0 1em 0 0;
+                    img {
+                        width: $navImgSocialLaptop;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        #copyright {
+            font-size: $navFontSizeLaptop;
+        }
+    }
+    #nav-footer {
+        font-size: $navFontSizeLaptop;
+        ul {
+            margin: 0.25em 0;
+            li {
+                font-size: $navFontSizeLaptop;
+            }
+        }
+        ul.nav-social {
+            li {
+                margin: 0.25em 0.5em;
+                img {
+                    width: $navImgSocialLaptop;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #container-header {
+        #logo {
+            h1 {
+                font-size: $navLogoSizeDesktop;
+            }
+        }
+        #nav-top {
+            ul.nav-text {
+                li {
+                    font-size: $navFontSizeDesktop;
+                }
+            }
+            ul.nav-social {
+                li {
+                    img {
+                        width: $navImgSocialDesktop;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        #copyright {
+            font-size: $navFontSizeDesktop;
+        }
+    }
+    #nav-footer {
+        font-size: $navFontSizeDesktop;
+        ul {
+            li {
+                font-size: $navFontSizeDesktop;
+            }
+        }
+        ul.nav-social {
+            li {
+                img {
+                    width: $navImgSocialDesktop;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #container-header {
+        #logo {
+            h1 {
+                font-size: $navLogoSizeLargeDesktop;
+            }
+        }
+        #nav-top {
+            ul.nav-text {
+                li {
+                    font-size: $navFontSizeLargeDesktop;
+                }
+            }
+            ul.nav-social {
+                li {
+                    img {
+                        width: $navImgSocialLargeDesktop;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        #copyright {
+            font-size: $navFontSizeLargeDesktop;
+        }
+    }
+    #nav-footer {
+        font-size: $navFontSizeLargeDesktop;
+        ul {
+            li {
+                font-size: $navFontSizeLargeDesktop;
+            }
+        }
+        ul.nav-social {
+            li {
+                img {
+                    width: $navImgSocialLargeDesktop;
+                }
+            }
+        }
+    }
 }

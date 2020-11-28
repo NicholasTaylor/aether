@@ -1,0 +1,49 @@
+@keyframes nav-top-on {
+    0% { left: -100vw; }
+    100% { left: 0vw; }
+}
+
+@keyframes nav-top-off {
+    0% { left: 0vw; }
+    100% { left: -100vw; }
+}
+
+@keyframes nav-screen-on {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@keyframes nav-screen-off {
+    0% {
+        visibility: visible;
+        opacity: 1;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+@keyframes desktop-nav-on {
+    0% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+@keyframes desktop-nav-off {
+    0% {
+        background-color: rgba(0, 0, 0, 1);
+    }
+    100% {
+        background-color: rgba(0, 0, 0, 0);
+    }
+}

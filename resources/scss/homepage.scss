@@ -12,7 +12,7 @@
         height: 100%;
         position: relative;
         z-index: 105;
-        background-color: rgba(0,0,0,.25);
+        background-color: rgba(0, 0, 0, 0.25);
     }
     .bg-video {
         video {
@@ -33,10 +33,16 @@
         width: 90vw;
         margin: 0 5vw 2em 5vw;
         bottom: 0;
-        h1, h2, h3, h4, h5, h6, p {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
             margin: 0;
             padding: 0;
-            line-height: .9;
+            line-height: 0.9;
         }
         h1 {
             @include title-style;
@@ -50,7 +56,7 @@
     }
 }
 
-@media only screen and (min-width: 420px) and (min-height: 420px){
+@media only screen and (min-width: 420px) and (min-height: 420px) {
     .entry {
         .entry-content {
             h1 {
@@ -63,28 +69,41 @@
     }
 }
 
-@media only screen and (min-width:1024px) {
-  .entry {
-    .entry-content {
-      h1 {
-        font-size: 3rem;
-      }
-      p {
-        font-size: 2rem;
-      }
+@media only screen and (min-width: 1024px) {
+    .entry {
+        .entry-content {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+        }
     }
-  }
 }
 
-@media only screen and (min-width:1200px) {
-  .entry {
-    .entry-content {
-      h1 {
-        font-size: 5rem;
-      }
-      p {
-        font-size: 3rem;
-      }
+@media only screen and (min-width: 1200px) {
+    .entry {
+        .entry-content {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: 2rem;
+            }
+        }
     }
-  }
+}
+
+@media only screen and (min-width: 1800px) {
+    .entry {
+        .entry-content {
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 3rem;
+            }
+        }
+    }
 }
