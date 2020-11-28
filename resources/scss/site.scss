@@ -198,7 +198,7 @@ footer {
             }
             ul.nav-text {
                 li {
-                    font-size: $navFontSizeTablet;
+                    font-size: $navFontSizeTabletPort;
                     width: auto;
                     margin: 0 1.25em 0 0;
                 }
@@ -206,11 +206,11 @@ footer {
             ul.nav-social {
                 margin: 0 auto;
                 li {
-                    font-size: $navImgSocialTablet;
+                    font-size: $navImgSocialTabletPort;
                     line-height: 1;
                     margin: .25em 1.1em .25em 0;
                     img {
-                        width: $navImgSocialTablet;
+                        width: $navImgSocialTabletPort;
                     }
                 }
             }
@@ -222,36 +222,91 @@ footer {
             transform: none;
             margin: 0 0 1em 0;
             h1 {
-                font-size: $navLogoSizeTablet;
+                font-size: $navLogoSizeTabletPort;
             }
         }
     }
 
     footer {
         #copyright {
-            font-size: $navFontSizeTablet;
+            font-size: $navFontSizeTabletPort;
         }
     }
     #nav-footer {
-        font-size: $navFontSizeTablet;
+        font-size: $navFontSizeTabletPort;
         ul {
             margin: 0.5em 0;
             li {
-                font-size: $navFontSizeTablet;
+                font-size: $navFontSizeTabletPort;
             }
         }
         ul.nav-social {
             li {
                 margin: 0.5em 1em;
                 img {
-                    width: $navImgSocialTablet;
+                    width: $navImgSocialTabletPort;
                 }
             }
         }
     }
 }
 
-@media only screen and (min-width: 1024px) {
+
+
+@media only screen and (min-width: 769px) {
+    #container-header {
+        #logo {
+            margin: 0 0 0.5em 0;
+            h1 {
+                font-size: $navLogoSizeTabletLand;
+            }
+        }
+        #nav-top {
+            ul {
+                margin: 0.5em auto;
+            }
+            ul.nav-text {
+                li {
+                    margin: 0 1em 0 0;
+                    font-size: $navFontSizeTabletLand;
+                }
+            }
+            ul.nav-social {
+                li {
+                    margin: 0 1em 0 0;
+                    img {
+                        width: $navImgSocialTabletLand;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        #copyright {
+            font-size: $navFontSizeTabletLand;
+        }
+    }
+    #nav-footer {
+        font-size: $navFontSizeTabletLand;
+        ul {
+            margin: 0.25em 0;
+            li {
+                font-size: $navFontSizeTabletLand;
+            }
+        }
+        ul.nav-social {
+            li {
+                margin: 0.25em 0.5em;
+                img {
+                    width: $navImgSocialTabletLand;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 1025px) {
     #container-header {
         #logo {
             margin: 0 0 0.5em 0;
@@ -265,6 +320,7 @@ footer {
             }
             ul.nav-text {
                 li {
+                    margin: 0 1em 0 0;
                     font-size: $navFontSizeLaptop;
                 }
             }

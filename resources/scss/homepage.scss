@@ -46,64 +46,93 @@
         }
         h1 {
             @include title-style;
-            font-size: 1.75rem;
+            font-size: $entryHeadlineMobile;
         }
         p {
             font-family: $fontStackMain;
             font-weight: 300;
-            font-size: 1rem;
+            font-size: $entryParagraphMobile;
         }
     }
 }
 
+/* START: Tablets - Portrait Mode */
 @media only screen and (min-width: 420px) and (min-height: 420px) {
     .entry {
         .entry-content {
+            width: 80vw;
             h1 {
-                font-size: 2rem;
+                font-size: $entryHeadlineTabletPort;
             }
             p {
-                font-size: 1.5rem;
+                font-size: $entryParagraphTabletPort;
             }
         }
     }
 }
+/* END: Tablets - Portrait Mode */
 
-@media only screen and (min-width: 1024px) {
+
+/* START: Tablets - Landscape Mode */
+@media only screen and (min-width: 769px) {
     .entry {
         .entry-content {
+            width: 80vw;
             h1 {
-                font-size: 3rem;
+                font-size: $entryHeadlineTabletLand;
             }
             p {
-                font-size: 2rem;
+                font-size: $entryParagraphTabletLand;
             }
         }
     }
 }
+/* END: Tablets - Landscape Mode */
 
+/* START: Laptops */
+@media only screen and (min-width: 1025px) {
+    .entry {
+        .entry-content {
+            width: 70vw;
+            h1 {
+                font-size: $entryHeadlineLaptop;
+            }
+            p {
+                font-size: $entryParagraphLaptop;
+            }
+        }
+    }
+}
+/* END: Laptops */
+
+/* START: Desktops */
 @media only screen and (min-width: 1200px) {
     .entry {
         .entry-content {
+            width: 60vw;
             h1 {
-                font-size: 3rem;
+                font-size: $entryHeadlineDesktop;
             }
             p {
-                font-size: 2rem;
+                font-size: $entryParagraphDesktop;
             }
         }
     }
 }
+/* END: Desktops */
 
+/* START: Large Desktops */
 @media only screen and (min-width: 1800px) {
     .entry {
         .entry-content {
+            width: 50vw;
             h1 {
-                font-size: 4rem;
+                font-size: $entryHeadlineLargeDesktop;
             }
             p {
-                font-size: 3rem;
+                font-size: $entryParagraphLargeDesktop;
             }
         }
     }
 }
+/* END: Large Desktops */

@@ -5,23 +5,41 @@ $fontStackMain: 'halyard-display';
 /* END: Variables - Fonts */
 
 /* START: Variables - Text Size */
+$entryHeadlineMobile: 1.75rem;
+$entryParagraphMobile: 1rem;
+$navLogoSizeMobile: 1.5rem;
 $navFontSizeMobile: 1.25rem;
+$navImgSocialMobile: 1.75rem;
 
-$navLogoSizeTablet: 2.25rem;
-$navFontSizeTablet: .8rem;
-$navImgSocialTablet: 1.25rem;
+$entryHeadlineTabletPort: 2rem;
+$entryParagraphTabletPort: 1.25rem;
+$navLogoSizeTabletPort: 2rem;
+$navFontSizeTabletPort: .8rem;
+$navImgSocialTabletPort: 1.1rem;
 
+$entryHeadlineTabletLand: 2rem;
+$entryParagraphTabletLand: 1.25rem;
+$navLogoSizeTabletLand: 2.25rem;
+$navFontSizeTabletLand: .8rem;
+$navImgSocialTabletLand: 1.25rem;
+
+$entryHeadlineLaptop: 2.25rem;
+$entryParagraphLaptop: 1.5rem;
 $navLogoSizeLaptop: 2.25rem;
 $navFontSizeLaptop: 1rem;
 $navImgSocialLaptop: 1.5rem;
 
+$entryHeadlineDesktop: 2.5rem;
+$entryParagraphDesktop: 2rem;
 $navLogoSizeDesktop: 2.5rem;
 $navFontSizeDesktop: 1.25rem;
 $navImgSocialDesktop: 2rem;
 
+$entryHeadlineLargeDesktop: 3rem;
+$entryParagraphLargeDesktop: 2rem;
 $navLogoSizeLargeDesktop: 3rem;
-$navFontSizeLargeDesktop: 2rem;
-$navImgSocialLargeDesktop: 2.5rem;
+$navFontSizeLargeDesktop: 1.5rem;
+$navImgSocialLargeDesktop: 2rem;
 /* END: Variables - Text Size */
 
 /* START: Variables - Text Color */
