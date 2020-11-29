@@ -22,7 +22,7 @@ mix.js('resources/js/app.js', 'public/js')
         'resources/scss/site.scss',
     'public/css')
     .sass(
-        'resources/scss/homepage.scss',
+        'resources/scss/blogpost.scss',
     'public/css');
 
 mix.js([

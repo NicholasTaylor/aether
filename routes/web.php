@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/homepage', function () {
-    return view('static-homepage');
+Route::get('/blogpost', function () {
+    return view('static-blogpost');
 });
