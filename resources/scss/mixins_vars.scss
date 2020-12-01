@@ -1,15 +1,26 @@
 /* START: Variables - Fonts */
 $fontStackLogo: 'urw-din';
-$fontStackTitle: 'futura-pt-bold';
+$fontStackTitle: 'urw-din';
+/*$fontStackTitle: 'futura-pt-bold';*/
 $fontStackMain: 'halyard-display';
+$fontStackCode: 'monotalic';
 /* END: Variables - Fonts */
 
 /* START: Variables - Text Size */
 $entryHeadlineMobile: 1.75rem;
 $entryParagraphMobile: 1rem;
+$entryWidthMobile: 90vw;
+$entrySmallerMobile: .9rem;
 $navLogoSizeMobile: 1.5rem;
 $navFontSizeMobile: 1.25rem;
 $navImgSocialMobile: 1.75rem;
+$h1Mobile: 1.75rem;
+$h2Mobile: 1.6rem;
+$h3Mobile: 1.5rem;
+$h4Mobile: 1.25rem;
+$h5Mobile: 1.1rem;
+$h6Mobile: 1rem;
+$pMobile: 1rem;
 
 $entryHeadlineTabletPort: 2rem;
 $entryParagraphTabletPort: 1.25rem;
@@ -43,14 +54,15 @@ $navImgSocialLargeDesktop: 2rem;
 /* END: Variables - Text Size */
 
 /* START: Variables - Text Color */
-
+$siteBgColor: #000000;
+$siteFontColor: #FFFFFF;
 /* END: Variables - Text Color */
 
 
 /* START: Mix-ins */
 @mixin title-style {
     font-family: $fontStackTitle;
-    text-transform: uppercase;
+    font-weight: 600;
     letter-spacing: -0.03em;    
 }
 /* END: Mix-ins */

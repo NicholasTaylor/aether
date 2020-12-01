@@ -29,8 +29,8 @@
     #entry-intro-content {
         position: absolute;
         z-index: 110;
-        color: white;
-        width: 90vw;
+        color: $siteFontColor;
+        width: $entryWidthMobile;
         margin: 0 5vw 2em 5vw;
         bottom: 0;
         h1,
@@ -46,6 +46,7 @@
         }
         h1 {
             @include title-style;
+            text-transform: uppercase;
             font-size: $entryHeadlineMobile;
         }
         p {
@@ -55,6 +56,14 @@
         }
     }
 }
+
+#entry-content {
+    width: $entryWidthMobile;
+    margin: 0 auto;
+    padding: 1em 0;
+    font-weight: 400;
+}
+
 
 /* START: Tablets - Portrait Mode */
 @media only screen and (min-width: 420px) and (min-height: 420px) {

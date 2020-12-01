@@ -4,10 +4,50 @@
 html,
 body {
     font-size: 100%;
-    background-color: black;
+    background-color: $siteBgColor;
+    color: $siteFontColor;
     font-family: $fontStackMain;
+    line-height: 1;
     margin: 0;
     padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.pullquote {
+    @include title-style;
+}
+
+h1 {
+    font-size: $h1Mobile;
+}
+
+h2 {
+    font-size: $h2Mobile;
+}
+
+h3 {
+    font-size: $h3Mobile;
+}
+
+h4 {
+    font-size: $h4Mobile;
+}
+
+h5 {
+    font-size: $h5Mobile;
+}
+
+h6 {
+    font-size: $h6Mobile;
+}
+
+p {
+    font-size: $pMobile;
 }
 
 .container {
@@ -48,10 +88,10 @@ header {
             list-style-type: none;
             li {
                 @include title-style;
-                color: white;
+                color: $siteFontColor;
                 text-align: left;
                 a {
-                    color: white;
+                    color: $siteFontColor;
                     text-decoration: none;
                 }
             }
@@ -106,10 +146,11 @@ header {
         top: 0.5rem;
         left: 50%;
         transform: translateX(-50%);
+        text-transform: none;
         h1 {
             font-family: $fontStackLogo;
             font-weight: 400;
-            color: white;
+            color: $siteFontColor;
             font-size: $navLogoSizeMobile;
             text-transform: lowercase;
             margin: 0;
@@ -128,7 +169,7 @@ footer {
     #copyright {
         font-size: $navFontSizeMobile;
         text-align: center;
-        color: white;
+        color: $siteFontColor;
     }
 }
 
@@ -141,12 +182,12 @@ footer {
         text-align: center;
         li {
             @include title-style;
-            color: white;
+            color: $siteFontColor;
             font-size: $navFontSizeMobile;
             display: inline-block;
             margin: 0 0.25em;
             a {
-                color: white;
+                color: $siteFontColor;
                 text-decoration: none;
             }
         }
@@ -160,6 +201,79 @@ footer {
                 width: $navImgSocialMobile;
             }
         }
+    }
+}
+
+.pullquote {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 0.8;
+    width: 80%;
+    margin: 1em auto;
+    padding: 1em 0;
+    position: relative;
+    &:after,
+    &:before {
+        position: absolute;
+        font-size: 6rem;
+        font-weight: 600;
+    }
+    &:before {
+        content: "“";
+        top: -0.25em;
+        left: -10%;
+    }
+    &:after {
+        content: "”";
+        bottom: -0.5em;
+        right: -10%;
+    }
+}
+
+blockquote {
+    border-left: 3px dashed $siteFontColor;
+    font-weight: 600;
+    padding: 0 0 0 1em;
+    font-size: $entrySmallerMobile;
+}
+
+code {
+    font-family: $fontStackCode;
+    word-break: break-word;
+    display: block;
+    padding: .75em;
+    font-size: $entrySmallerMobile;
+    margin: .75em 0;
+    background-color: #{$siteFontColor}3F;
+}
+
+.entry-img-sm {
+    width: 50%;
+}
+
+.entry-img-med {
+    width: 75%;
+}
+
+.entry-img-lg {
+    width: 100%;
+}
+
+.entry-img-full {
+    width: 100vw;
+    position: relative;
+    left: ((100vw - $entryWidthMobile) / -2);
+}
+
+figure.entry-img {
+    margin: 1em auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    figcaption {
+        font-size: $entrySmallerMobile;
+        padding: .5em .25em;
     }
 }
 
@@ -208,7 +322,7 @@ footer {
                 li {
                     font-size: $navImgSocialTabletPort;
                     line-height: 1;
-                    margin: .25em 1.1em .25em 0;
+                    margin: 0.25em 1.1em 0.25em 0;
                     img {
                         width: $navImgSocialTabletPort;
                     }
@@ -250,8 +364,6 @@ footer {
         }
     }
 }
-
-
 
 @media only screen and (min-width: 769px) {
     #container-header {
@@ -304,7 +416,6 @@ footer {
         }
     }
 }
-
 
 @media only screen and (min-width: 1025px) {
     #container-header {
