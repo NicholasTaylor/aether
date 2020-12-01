@@ -70,6 +70,10 @@
     #entry-intro {
         #entry-intro-content {
             width: 80vw;
+            margin: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 1em;
             h1 {
                 font-size: $entryHeadlineTabletPort;
             }
@@ -77,6 +81,13 @@
                 font-size: $entryParagraphTabletPort;
             }
         }
+    }
+
+    #entry-content {
+        width: $entryWidthTabletPort;
+        margin: 0 auto;
+        padding: 1em 0;
+        font-weight: 400;
     }
 }
 /* END: Tablets - Portrait Mode */
@@ -86,7 +97,7 @@
 @media only screen and (min-width: 769px) {
     #entry-intro {
         #entry-intro-content {
-            width: 80vw;
+            width: $entryWidthTabletPort;
             h1 {
                 font-size: $entryHeadlineTabletLand;
             }

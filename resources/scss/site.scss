@@ -100,12 +100,13 @@ header {
             li {
                 width: 80%;
                 font-size: $navFontSizeMobile;
+                margin: 0.5em 0;
             }
         }
         ul.nav-social {
             li {
                 width: initial;
-                margin: 0.25em 1em 0.25em 0;
+                margin: 1em 1em 1em 0;
                 img {
                     height: auto;
                     width: $navImgSocialMobile;
@@ -185,7 +186,7 @@ footer {
             color: $siteFontColor;
             font-size: $navFontSizeMobile;
             display: inline-block;
-            margin: 0 0.25em;
+            margin: 0.5em;
             a {
                 color: $siteFontColor;
                 text-decoration: none;
@@ -241,10 +242,10 @@ code {
     font-family: $fontStackCode;
     word-break: break-word;
     display: block;
-    padding: .75em;
+    padding: 0.75em;
     font-size: $entrySmallerMobile;
-    margin: .75em 0;
-    background-color: #{$siteFontColor}3F;
+    margin: 0.75em 0;
+    background-color: #{$siteFontColor}3f;
 }
 
 .entry-img-sm {
@@ -259,12 +260,6 @@ code {
     width: 100%;
 }
 
-.entry-img-full {
-    width: 100vw;
-    position: relative;
-    left: ((100vw - $entryWidthMobile) / -2);
-}
-
 figure.entry-img {
     margin: 1em auto;
     img {
@@ -273,7 +268,17 @@ figure.entry-img {
     }
     figcaption {
         font-size: $entrySmallerMobile;
-        padding: .5em .25em;
+        padding: 0.5em 0.25em;
+    }
+}
+
+.entry-img-full {
+    width: 100vw;
+    position: relative;
+    left: ((100vw - $entryWidthMobile) / -2);
+    figcaption {
+        width: $entryWidthMobile;
+        margin: 0 auto;
     }
 }
 
@@ -285,7 +290,7 @@ figure.entry-img {
     }
 
     #container-header {
-        margin: 2vh 5vw;
+        margin: 2vh ((100vw - $entryWidthTabletPort) / 2);
         #nav-screen {
             display: none;
         }
@@ -363,10 +368,69 @@ figure.entry-img {
             }
         }
     }
+
+    .pullquote {
+        font-size: 1.75rem;
+        &:after,
+        &:before {
+            font-size: 6rem;
+        }
+    }
+
+    blockquote {
+        font-size: $entrySmallerTabletPort;
+    }
+
+    code {
+        font-size: $entrySmallerTabletPort;
+    }
+
+    figure.entry-img {
+        figcaption {
+            font-size: $entrySmallerTabletPort;
+        }
+    }
+
+    h1 {
+        font-size: $h1TabletPort;
+    }
+
+    h2 {
+        font-size: $h2TabletPort;
+    }
+
+    h3 {
+        font-size: $h3TabletPort;
+    }
+
+    h4 {
+        font-size: $h4TabletPort;
+    }
+
+    h5 {
+        font-size: $h5TabletPort;
+    }
+
+    h6 {
+        font-size: $h6TabletPort;
+    }
+
+    p {
+        font-size: $pTabletPort;
+    }
+
+    .entry-img-full {
+        left: ((100vw - $entryWidthTabletPort) / -2);
+        figcaption {
+            width: $entryWidthTabletPort;
+        }
+    }
+
 }
 
 @media only screen and (min-width: 769px) {
     #container-header {
+        margin: 2vh ((100vw - $entryWidthTabletLand) / 2);
         #logo {
             margin: 0 0 0.5em 0;
             h1 {
@@ -413,6 +477,63 @@ figure.entry-img {
                     width: $navImgSocialTabletLand;
                 }
             }
+        }
+    }
+
+    .pullquote {
+        font-size: 1.75rem;
+        &:after,
+        &:before {
+            font-size: 6rem;
+        }
+    }
+
+    blockquote {
+        font-size: $entrySmallerTabletLand;
+    }
+
+    code {
+        font-size: $entrySmallerTabletLand;
+    }
+
+    figure.entry-img {
+        figcaption {
+            font-size: $entrySmallerTabletLand;
+        }
+    }
+
+    h1 {
+        font-size: $h1TabletLand;
+    }
+
+    h2 {
+        font-size: $h2TabletLand;
+    }
+
+    h3 {
+        font-size: $h3TabletLand;
+    }
+
+    h4 {
+        font-size: $h4TabletLand;
+    }
+
+    h5 {
+        font-size: $h5TabletLand;
+    }
+
+    h6 {
+        font-size: $h6TabletLand;
+    }
+
+    p {
+        font-size: $pTabletLand;
+    }
+
+    .entry-img-full {
+        left: ((100vw - $entryWidthTabletLand) / -2);
+        figcaption {
+            width: $entryWidthTabletLand;
         }
     }
 }
